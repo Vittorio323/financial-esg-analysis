@@ -1,11 +1,10 @@
-
 # Financial-ESG Analysis — MCP Servers per Claude
 
 Progetto universitario che implementa tre server **MCP (Model Context Protocol)** in Python, utilizzabili da Claude per estrarre dati finanziari e metriche ESG e generare analisi e visualizzazioni automatizzate.
 
 ## Architettura
 
-Il progetto è composto da tre server MCP indipendenti, ciascuno con una responsabilità specifiche:
+Il progetto è composto da tre server MCP indipendenti, ciascuno con una responsabilità specifica:
 
 | Server | File | Funzione |
 |---|---|---|
@@ -29,8 +28,6 @@ pip install -r requirements.txt
 ### Dataset ESG
 
 I server `analytics_server.py` ed `esg_ethics_server.py` richiedono il dataset **"SP 500 ESG Risk Ratings"**, disponibile su [Kaggle](https://www.kaggle.com/datasets/pritish509/s-and-p-500-esg-risk-ratings).
-
-**Nota**: i punteggi ESG sono aggiornati alla data di pubblicazione del dataset; per un utilizzo in produzione andrebbero sostituiti con una fonte dati ESG in tempo reale
 
 Scarica il CSV e posizionalo in:
 ```
@@ -69,6 +66,12 @@ Una volta connessi, puoi chiedere a Claude cose come:
 - *"Qual è la quotazione attuale di Apple e come si è mossa negli ultimi 30 giorni?"*
 - *"Mostrami il profilo di rischio ESG di Microsoft"*
 - *"Genera un boxplot di confronto del rischio ESG tra i settori dell'S&P 500"*
+
+### Output generati
+
+| Distribuzione del rischio ESG (S&P 500) | Profilo ESG — Apple (AAPL) |
+|---|---|
+| ![Distribuzione ESG](outputs/esg_distribution.png) | ![Profilo ESG Apple](outputs/AAPL_esg_bar.png) |
 
 ## Struttura del progetto
 
