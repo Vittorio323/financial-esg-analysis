@@ -1,3 +1,4 @@
+
 # Financial-ESG Analysis — MCP Servers per Claude
 
 Progetto universitario che implementa tre server **MCP (Model Context Protocol)** in Python, utilizzabili da Claude per estrarre dati finanziari e metriche ESG e generare analisi e visualizzazioni automatizzate.
